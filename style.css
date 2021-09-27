@@ -1,0 +1,66 @@
+button,
+body{
+    font-size: 2rem;
+
+    margin: 1rem;
+}
+
+button{
+   height:50px;
+   width:50px;
+   cursor:pointer;
+
+   border: darkslategray solid;
+   border-radius: 10px;
+}
+button:hover {
+    background-color: darkslategray;
+    color:white;
+ }
+
+.inputs input{
+    height: 40px;
+    width: 400px;
+
+    font-size: 1.5rem;
+
+    border: darkslategray solid;
+    border-radius: 10px;
+
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.calculator .inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+
+    background-color: dimgray;
+}
+
+body .calculator{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.error-message1,
+.error-message2{
+    color: darkslategray;
+}
+
+.show-result #result, p{
+    color: white;
+}
