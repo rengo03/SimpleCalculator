@@ -5,16 +5,25 @@ body{
     margin: 1rem;
 }
 
-button{
+
+#sum,
+#diff,
+#multiplication,
+#division{
    height:50px;
    width:50px;
    cursor:pointer;
-
-   border: darkslategray solid;
+   
+   background-color: whitesmoke;
+   border: #2f4f4f solid;
    border-radius: 10px;
 }
-button:hover {
-    background-color: darkslategray;
+
+#sum:hover,
+#diff:hover,
+#multiplication:hover,
+#division:hover {
+    background-color: #2f4f4f;
     color:white;
  }
 
@@ -56,6 +65,11 @@ body .calculator{
     gap: 10px;
 }
 
+.buttons{
+    display: flex;
+
+}
+
 .error-message1,
 .error-message2{
     color: darkslategray;
@@ -64,3 +78,22 @@ body .calculator{
 .show-result #result, p{
     color: white;
 }
+@media (max-width: 768px){
+    body{
+        flex-direction: column ;
+        gap: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    /*  Proprietatile de CSS din media queries se scriu dupa cele normale, intrucat uneori este nevoie sa le suprascrie.  */
+    .buttons{
+        flex-direction: column;
+    }
+    .inputs input{
+        height: 40px;
+        width: 240px;
+    }
+    
+}
+
